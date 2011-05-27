@@ -1,4 +1,4 @@
 source "http://rubygems.org"
 
-# Specify your gem's dependencies in nanoc_deploy.gemspec
+# Specify your gem's dependencies in nanoc-deploy.gemspec
 gemspec

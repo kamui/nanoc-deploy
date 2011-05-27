@@ -1,18 +1,18 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "nanoc_deploy/version"
+require "nanoc-deploy/version"
 
 Gem::Specification.new do |s|
-  s.name        = "nanoc_deploy"
+  s.name        = "nanoc-deploy"
   s.version     = NanocDeploy::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Jack Chu"]
   s.email       = ["jack@jackchu.com"]
-  s.homepage    = "https://github.com/kamui/nanoc_deploy"
-  s.summary     = %q{nanoc 3.1 extension adds rake cloud deployment options using fog.}
+  s.homepage    = "https://github.com/kamui/nanoc-deploy"
+  s.summary     = %q{nanoc extension adds rake cloud deployment options using fog.}
   s.description = %q{}
 
-  s.rubyforge_project = "nanoc_deploy"
+  s.rubyforge_project = "nanoc-deploy"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")

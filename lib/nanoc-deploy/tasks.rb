@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-require 'nanoc_deploy'
+require 'nanoc-deploy'
 require 'rake'
 
 module NanocDeploy::Tasks

@@ -2,6 +2,6 @@
 
 module Nanoc3::Extra
   module Deployers
-    autoload 'Cloud', 'nanoc_deploy/extra/deployers/cloud'
+    autoload 'Cloud', 'nanoc-deploy/extra/deployers/cloud'
   end
 end

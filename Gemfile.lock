@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    nanoc_deploy (0.0.1)
+    nanoc-deploy (0.0.1)
       fog (>= 0.7.2)
       nanoc (>= 3.1.6)
 
@@ -35,4 +35,4 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  nanoc_deploy!
+  nanoc-deploy!
