@@ -19,7 +19,7 @@ Otherwise, you can just install the gem manually:
 
     gem install nanoc-deploy
 
-and then in your nanoc project, put this in lib/default.rb:
+and then in your nanoc project, put this in Rakefile:
 
     require 'nanoc-deploy/tasks'
 
