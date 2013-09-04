@@ -11,6 +11,7 @@ Gem::Specification.new do |s|
   s.homepage    = "http://jackchu.com/easily-deploy-static-sites-into-the-cloud-wit"
   s.summary     = %q{nanoc extension adds rake cloud deployment options using fog.}
   s.description = %q{}
+  s.license     = "MIT"
 
   s.rubyforge_project = "nanoc-deploy"
 
