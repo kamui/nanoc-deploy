@@ -78,8 +78,9 @@ module NanocDeploy::Extra::Deployers
       provider = @site.config[:deploy][config_name][:provider]
       src = File.expand_path(@site.config[:output_dir]) + '/'
       bucket = @site.config[:deploy][config_name][:bucket]
-
+      aws_region = @site.config[:deploy][config_name][:aws_region]
       path = @site.config[:deploy][config_name][:path]
+      
 
       # Validate arguments
       error 'No provider found in deployment configuration' if provider.nil?
@@ -88,11 +89,20 @@ module NanocDeploy::Extra::Deployers
 
       case provider
         when 'aws'
-          connection = Fog::Storage.new(
-            :provider => 'AWS',
-            :aws_access_key_id => @site.config[:deploy][config_name][:aws_access_key_id],
-            :aws_secret_access_key => @site.config[:deploy][config_name][:aws_secret_access_key]
+          if aws_region
+            connection = Fog::Storage.new(
+              :provider => 'AWS',
+              :aws_access_key_id => @site.config[:deploy][config_name][:aws_access_key_id],
+              :aws_secret_access_key => @site.config[:deploy][config_name][:aws_secret_access_key],
+              :region => aws_region
             )
+          else
+            connection = Fog::Storage.new(
+              :provider => 'AWS',
+              :aws_access_key_id => @site.config[:deploy][config_name][:aws_access_key_id],
+              :aws_secret_access_key => @site.config[:deploy][config_name][:aws_secret_access_key]
+              )
+          end
         when 'rackspace'
           connection = Fog::Storage.new(
             :provider => 'Rackspace',
