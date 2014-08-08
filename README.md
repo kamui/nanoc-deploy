@@ -5,7 +5,7 @@ Nanoc Deploy
 
 Nanoc Deploy is a nanoc gem that adds a deployer that will upload your site into the cloud.
 
-It uses the [fog](https://github.com/geemus/fog) gem and currently supports Amazon S3, Rackspace Cloud Files, and Google Storage.
+It uses the [fog](https://github.com/fog/fog) gem and currently supports Amazon S3, Rackspace Cloud Files, and Google Storage.
 
 Installation
 ------------
