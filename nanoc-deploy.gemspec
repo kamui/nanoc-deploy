@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Jack Chu"]
   s.email       = ["jack@jackchu.com"]
-  s.homepage    = "http://jackchu.com/easily-deploy-static-sites-into-the-cloud-wit"
+  s.homepage    = "jackchu.com/2011/06/16/easily-deploy-static-sites-into-the-cloud-with-nanoc-deploy"
   s.summary     = %q{nanoc extension adds rake cloud deployment options using fog.}
   s.description = %q{}
   s.license     = "MIT"
