@@ -54,6 +54,10 @@ If your provider is "google":
         google_storage_secret_access_key: your_key
         google_storage_access_key_id:     your_id
 
+If your provider is "aws", there's also an optional `aws_region` config:
+
+aws_region:     us-west-1
+
 You can set an optional path if you want a path prefix to your site. For example, the code
 below:
 
